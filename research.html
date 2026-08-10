@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Hong Niu</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="name">Hongqian (Hong) Niu</p>
+    <p class="role">PhD Candidate, Biostatistics — UNC Chapel Hill</p>
+    <nav class="site-nav">
+      <a href="index.html">About</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">Highlighted Research</h1>
+  <section>
+    <div class="entry">
+      <p class="entry-title">Project One: Incorporating LLM Embeddings for Variation Across the Human Genome</p>
+      <p class="entry-meta">Genomics · LLM embeddings<br><strong>Hongqian Niu</strong>, Jordan G. Bryan, Jacob Williams, Hufeng Zhou, Haoyu Zhang, Xihao Li, Didong Li</p>
+      <img src="images/project1-figure.png" alt="Overview of the LLM embedding framework for human genome variation" class="figure">
+      <p>A systematic framework for generating variant-level embeddings across the entire human genome
+        using large language models, built from curated annotations (FAVOR, ClinVar, GWAS Catalog) at
+        scales up to ~9 billion possible variants. Applied to embedding-augmented polygenic risk score
+        prediction on UK Biobank data.</p>
+      <p class="entry-meta">
+        <a href="https://arxiv.org/abs/2509.20702" target="_blank" rel="noopener">arXiv</a> ·
+        <a href="https://huggingface.co/datasets/LiLabUNC/Variant-Foundation-Embeddings" target="_blank" rel="noopener">Hugging Face</a></p>
+    </div>
+
+    <div class="entry">
+      <p class="entry-title">Project Two: Deep Generative Models: Complexity, Dimensionality, and Approximation</p>
+      <p class="entry-meta">Statistical/ML theory<br>Kevin Wang, <strong>Hongqian Niu</strong>, Yixin Wang, Didong Li</p>
+      <img src="images/project2-figure.png" alt="1D-to-2D generator trajectory over training iterations" class="figure">
+      <p>A theoretical study of how generative networks approximate distributions on manifolds,
+        showing that arbitrarily low-dimensional latent inputs (below the manifold's intrinsic
+        dimension) still suffice, at the cost of a super-exponential complexity trade-off between
+        approximation error, dimensionality, and model size.</p>
+      <p class="entry-meta">
+        <a href="https://www.jmlr.org/papers/v26/24-1335.html" target="_blank" rel="noopener">JMLR</a></p>
+    </div>
+
+    <div class="entry">
+      <p class="entry-title">Project Three: Can Generative Artificial Intelligence Survive Data Contamination? Theoretical Guarantees under Contaminated Recursive Training</p>
+      <p class="entry-meta">Statistical/ML theory<br>Kevin Wang, <strong>Hongqian Niu</strong>, Didong Li</p>
+      <p>A theoretical analysis of generative models trained recursively on data contaminated by
+        earlier model-generated outputs, establishing guarantees on when and how such training
+        remains stable versus degrades (model collapse).</p>
+      <p class="entry-meta">
+        <a href="https://arxiv.org/abs/2602.16065" target="_blank" rel="noopener">arXiv</a></p>
+    </div>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  &copy; 2026 Hong Niu. Built with plain HTML/CSS, hosted on GitHub Pages.
+</footer>
+
+</body>
+</html>
