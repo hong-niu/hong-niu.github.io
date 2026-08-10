@@ -112,6 +112,23 @@ section { margin-bottom: 2.2rem; }
 }
 .entry:last-child { border-bottom: none; }
 
+.pub-list {
+  counter-reset: pub;
+}
+.pub-list .entry {
+  position: relative;
+  padding-left: 1.8rem;
+}
+.pub-list .entry::before {
+  counter-increment: pub;
+  content: counter(pub) ".";
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
 .entry-title { font-weight: 700; margin: 0 0 0.2rem; }
 .entry-meta {
   font-family: "Helvetica Neue", Arial, sans-serif;
