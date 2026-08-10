@@ -149,6 +149,23 @@ a { color: var(--accent); }
   margin: 0 0 0.15rem;
 }
 
+.cv-numbered {
+  counter-reset: cvnum;
+}
+.cv-numbered .cv-item {
+  position: relative;
+  padding-left: 1.8rem;
+}
+.cv-numbered .cv-item::before {
+  counter-increment: cvnum;
+  content: counter(cvnum) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  color: var(--accent);
+}
+
 .scholar-note {
   margin-bottom: 1.5rem;
 }
